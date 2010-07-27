@@ -1,0 +1,71 @@
+ics2gCal - a ics feed adder for Google Calendar
+
+Copyright 2010  Pål Levold
+
+
+LICENCE
+=======
+
+ics2gCal is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+ics2gCal is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+
+
+DOWNLOAD
+========
+
+Lates version can be found at http://github.com/levold/ics2gCal
+
+
+DEPENDENCIES
+============
+
+- GData Python API, by Google Inc. 
+		http://code.google.com/p/gdata-python-client/downloads/list
+
+- iCalendar package for Python, by Max M 
+		http://codespeak.net/icalendar/
+		
+- pytz, by Stuart Bishop
+		http://pytz.sourceforge.net/ or your distro's repository
+		
+USAGE
+=====
+
+1) Create a configuration file named 'config' in the same directory as ics2gCal.
+	 Tip: Use the layout provided below.
+
+2) Create an empty file where UIDs of added events will be stored (namend in the config file).
+
+3) Run the script (./ics2gCal.py) either manually or by creating a cron job
+
+CONFIG FILE LAYOUT
+==================
+
+[calendar1]
+url = <FILL IN>
+sha1 = <FILL IN> #whatever as long as it isn't the actual sha1 of the ics file (will be updated)
+addto = <FILL IN> #Calnedar in gCal to add events to. If unsure, use /calendar/feeds/default/private/full>
+
+[calendar2]
+url = <FILL IN>
+sha1 = <FILL IN>
+addto = <FILL IN>
+
+#etc...
+
+[settings]
+username = <FILL IN>@gmail.com
+password = <FILL IN>
+eventfile = addedEvents.txt
+
+	
