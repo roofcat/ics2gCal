@@ -16,7 +16,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+    along with ics2gCal.  If not, see <http://www.gnu.org/licenses/>.
     
     This file is based on calendarExample.py from Google Inc. in the GData
     Python API <http://code.google.com/p/gdata-python-client/downloads/list>.
