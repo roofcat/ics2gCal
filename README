@@ -2,6 +2,14 @@ ics2gCal - a ics feed adder for Google Calendar
 
 Copyright 2010  Pål Levold
 
+CONTACT
+=======
+
+You can find the source code, wiki, and issue tracker at 
+http://github.com/levold/ics2gCal/
+
+Your feedback is also welcome at paal.levold@gmail.com
+
 
 LICENCE
 =======
@@ -38,6 +46,7 @@ DEPENDENCIES
 - pytz, by Stuart Bishop
 		http://pytz.sourceforge.net/ or your distro's repository
 		
+		
 USAGE
 =====
 
@@ -47,6 +56,26 @@ USAGE
 2) Create an empty file where UIDs of added events will be stored (namend in the config file).
 
 3) Run the script (./ics2gCal.py) either manually or by creating a cron job
+
+
+USAGE WITHOUT ROOT ACCESS
+=========================
+
+If you don't have root access to the computer and need to install some of the dependencies you can
+download the dependecies as usual, but instead of running
+
+# ./setup.py install
+
+you can run
+
+$ ./setup.py install --home=~
+
+This will install the Python module in ~, i.e. your home directory. Follow the USAGE section above as
+usual, but when running the script you should make sure that your PYTHONPATH environment variable is set
+to ~/lib/python/. The easiest way is to run the script with this command:
+
+$ export PYTHONPATH=~/lib/python/ && ./ics2gCal.py
+
 
 CONFIG FILE LAYOUT
 ==================
