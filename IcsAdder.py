@@ -1,4 +1,4 @@
-''''
+'''
 		IcsAdder.py
 		
 		Copyright 2010 Pål Levold		
@@ -17,7 +17,7 @@
 
     You should have received a copy of the GNU General Public License
     along with ics2gCal.  If not, see <http://www.gnu.org/licenses/>.
-''''
+'''
 
 
 from icalendar import Calendar

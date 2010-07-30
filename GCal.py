@@ -1,4 +1,4 @@
-''''
+'''
 		GCal.py
 		
 		Copyright 2010 Pål Levold		
@@ -20,7 +20,7 @@
     
     This file is based on calendarExample.py from Google Inc. in the GData
     Python API <http://code.google.com/p/gdata-python-client/downloads/list>.
-''''
+'''
 
 
 try:
