@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-''''
+'''
 		ics2gCal.py
 		
 		Copyright 2010 Pål Levold		
@@ -19,7 +19,7 @@
 
     You should have received a copy of the GNU General Public License
     along with ics2gCal.  If not, see <http://www.gnu.org/licenses/>.
-''''
+'''
 
 from GCal import GCal
 from IcsAdder import IcsAdder
